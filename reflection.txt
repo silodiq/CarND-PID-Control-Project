@@ -1,0 +1,7 @@
+First, consider setting the value of I to 0. For a correct pid controller, we may not need the value of I at first, but for a long time running the value of I will be very heavy.
+
+And then, try to find a reasonable value of p, which can't be too small or too big, if it's too small the car can't follow the curve of the road very well, if it's too big it makes a lot of oscillations;
+
+Then, adjust the d value. If the d value is too small, it will not be able to suppress the amplitude of oscillation generated during operation. If the d value is too large, it will cause excessive suppression and produce the reverse oscillation.
+
+The I value shows its effect over a long run, and is two orders of magnitude smaller than the p and d values
